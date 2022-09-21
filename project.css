@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration:none;
+}
+.TOP{
+    width:100%;
+    min-height:100vh;
+    background: rgb(244,54,54);
+    background: linear-gradient(13deg, rgba(244,54,54,1) 0%, rgba(117,169,177,1) 98%, rgba(131,132,158,1) 100%);
+    background-size:cover;
+    background-position:center;
+    position:relative;
+}
+nav {
+    display: flex;
+    padding: 1%;
+    justify-content: space-between;
+    align-items: center;
+    position:static;
+    top: 0px;
+    z-index: 10;
+    
+}
+
+
+.logo{
+    color:black;
+    font-size: 16px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.link_on_top{
+    flex:1;
+    text-align:right;
+}
+.link_on_top ul li{
+    list-style:none;
+    display:inline-block;
+    padding:15px 20px;
+    position:relative;
+}
+
+    .link_on_top ul li a {
+        color: white;
+        font-size: 16px;
+        text-decoration: none;
+    }
+
+    .link_on_top ul li::after {
+        content: '';
+        width: 0%;
+        height: 2px;
+        background: #f44336;
+        display: block;
+        margin: auto;
+        transition: 0s;
+  
+    }
+
+    .link_on_top ul li:hover::after{
+        width:100%;
+        
+    }
+
+    .row{
+        display: flex;
+        height:88%;
+        align-items:center;
+        
+    }
+    .col{
+        flex-basis: 100%;
+        padding-top: 50px;
+        text-align: center;
+    }
+    .col h1{
+        color: white;
+        font-size:45px;
+    }
+    p{
+        color:black;
+        font-size: 12px;
+    }
+
+    .box{
+        width:200px;
+        height:230px;
+        display:inline-block;
+        border-radius: 10px;
+        padding: 15px 25px;
+        box-sizing: border-box;
+        cursor: pointer;
+        margin: 10px 15px;
+        background-position: center;
+        background-size: cover;
+        transition: transform 0.5s;
+    }
+    .box:hover{
+        transform: translateY(-10px);
+    }
+    .box h5{
+        color: white;
+    }
+
+    .box p{
+        color:white;
+    }
+    .box1{
+        background-image: url("ludo.jpg");
+    }
+    .box2{
+        background-image: url("flight.jpg");
+    }
+    .box3{
+        background-image: url("network.jpg");
+    }
+    .box4{
+        background-image: url("web.jpg");
+    }
+
+@media (max-width:1300px) {
+    .row{
+        flex-direction: column;
+    }
+
+    .row{
+        display: flex;
+        height:88%;
+        align-items:center;
+        
+    }
+    .col{
+        flex-basis: 50%;
+        padding-top: 50px;
+        text-align: center;
+    }
+    .col h1{
+        color: #ffffff;
+        font-size:45px;
+    }
+    p{
+        color:black;
+        font-size: 12px;
+    }
+
+    .box{
+        width:200px;
+        height:230px;
+        display:inline-block;
+        border-radius: 10px;
+        padding: 15px 25px;
+        box-sizing: border-box;
+        cursor: pointer;
+        margin: 10px 15px;
+        background-position: center;
+        background-size: cover;
+        transition: transform 0.5s;
+    }
+    .box:hover{
+        transform: translateY(-10px);
+    }
+    .box h5{
+        color: white;
+    }
+
+    .box p{
+        color:white;
+    }
+    .box1{
+        background-image: url("ludo.jpg");
+    }
+    .box2{
+        background-image: url("flight.jpg");
+    }
+    .box3{
+        background-image: url("network.jpg");
+    }
+    .box4{
+        background-image: url("web.jpg");
+    }
+/*
+    .box{
+        width:450px;
+        height:600px;
+    }
+
+    .box h5{
+        font-size: 18px;
+        color: white;
+    }
+
+    .box p{
+        font-size: 16px;
+        color:white;
+    }
+    .link_on_top ul li a {
+        color: black;
+        font-size: 20px;
+        text-decoration: none;
+    }
+    */
+}

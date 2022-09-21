@@ -1,0 +1,352 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+a{
+    text-decoration:none;
+}
+.TOP{
+    width:100%;
+    min-height:100vh;
+    background-image:url("Final.jpg");
+    background-size:cover;
+    background-position:center;
+    position:relative;
+}
+nav {
+    display: flex;
+    padding: 1%;
+    justify-content: space-between;
+    align-items: center;
+    position:static;
+    top: 0px;
+    z-index: 10;
+    
+}
+
+
+
+nav .avatar{
+    width: 80px;
+    border-radius: 50%;
+    height: 80px;
+    background-image: url("2.jpg");
+    background-size:cover;
+    border:2px solid #38f512;
+    
+}
+
+.logo{
+    color:black;
+    font-size: 16px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.link_on_top{
+    flex:1;
+    text-align:right;
+}
+.link_on_top ul li{
+    list-style:none;
+    display:inline-block;
+    padding:15px 20px;
+    position:relative;
+}
+
+    .link_on_top ul li a {
+        color: black;
+        font-size: 16px;
+        text-decoration: none;
+    }
+
+    .link_on_top ul li::after {
+        content: '';
+        width: 0%;
+        height: 2px;
+        background: #f44336;
+        display: block;
+        margin: auto;
+        transition: 0.5s;
+    }
+
+    .link_on_top ul li:hover::after{
+        width:100%;
+        
+    }
+
+    .Main h1{
+        text-align: center;
+        font-size: 40px;
+        color: black;
+        font-weight: bolder;
+        letter-spacing: 5px;
+    }
+
+    span{
+        color:#f44336
+    }
+
+
+   
+
+    
+    
+    .row{
+        width:90%;
+        position: absolute;
+        top: 50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+    }
+    .row .upper_para{
+        opacity: 0.7;
+        font-weight: 500;
+        font-size: 18px;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .row .para{
+        color: aliceblue;
+        font-size: 20px;
+        font-weight: 500;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .row h2{
+        font-size: 40px;
+        font-weight: bolder;
+    }
+    .row p{
+        color:black;
+        font-size: 12px;
+    }
+
+    
+    
+    
+/*MAJOR-COURSES*/
+
+    
+    .course{
+        
+        width: 80%;
+        margin:auto;
+        text-align: center;
+        padding-top: 100px; 
+        background-color:white;
+    }
+
+    .course h1{
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+    .row-2{
+        margin-top: 5%;
+        display: flex;
+        justify-content: space-between;
+      
+    }
+
+    .box{
+        flex-basis: 20%;
+        margin-bottom: 5%;
+        border-radius: 10px;
+        padding: 20px 12px;
+        box-sizing: border-box;
+        cursor: pointer;
+        background: rgb(231, 105, 81);
+    }
+    .box:hover{
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+    }
+    .box h5{
+        color: rgb(255, 255, 255);
+    }
+
+    .box p{
+        font-size: 14px;
+        color:rgb(255, 246, 246);
+    }
+    
+    .col1 h4{
+        padding-left: 18px;
+    }
+
+
+    /*Campus*/
+/*
+    .back{
+        background-image: url("pat.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+*/
+    .campus{
+        width: 80%;
+        margin:auto;
+        text-align: center;
+        padding-top: 100px; 
+        background-color:white;
+        margin-bottom: 5%;
+
+    }
+
+    .campus h1{
+        font-size: 40px;
+        font-weight: bold;
+    }
+    .campus-col{
+        flex-basis: 50%;
+        padding-top: 0px;
+    }
+
+    .boxt{
+        width:250px;
+        height:400px;
+        display:inline-block;
+        border-radius: 10px;
+        padding: 15px 60px;
+        box-sizing: border-box;
+        cursor: pointer;
+        margin: 10px;
+        background-position: center;
+        background-size: cover;
+        transition: transform 0.5s;
+    }
+    .boxt:hover{
+        transform: translateY(-10px);
+    }
+    .boxt h5{
+        color: rgb(0, 0, 0);
+    }
+
+    .boxt1{
+        background-image: url("fast.jpg");
+    }
+    .boxt2{
+        background-image: url("aps.jpg");
+    }
+    .boxt3{
+        background-image: url("fauji.jpg");
+    }
+
+    /*ABOUT ME*/
+
+    .Second{
+        background-color: #191919;
+        padding: 100px 0;
+        align-items: center;
+        justify-content: center;
+    }
+    .about-txt{
+        text-align: center;
+    }
+
+    .main2{
+        width:1130px;
+        max-width: 95%;
+        margin:0 auto;
+        display:flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .about-txt h3{
+        color:white;
+        font-size: 70px;
+        text-transform: capitalize;
+        margin-bottom: 20px;
+    }
+   
+    .about-txt h5{
+        color:white;
+        letter-spacing: 1px;
+        font-size: 22px;
+        margin-bottom: 25px;
+        text-transform: capitalize;
+    }
+
+    .about-txt p{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: darkgray;
+        letter-spacing: 1px;
+        font-size: 17px;
+        margin-bottom: 45px;
+        line-height: 25px;
+        
+    }
+    
+    .icons .fa{
+        padding: 20px;
+        font-size:30px;
+        color:white;
+        margin-top: 10px;
+        cursor:pointer;
+        transition: 0.3s;
+    }
+    .icons :hover{
+        color:#f44336
+    }
+
+
+
+    nav .bi{
+        display: none;
+    }
+
+   @media(max-width:767px) {
+    
+    .link_on_top ul li{
+        text-align: left;
+        display: block;
+    }
+    .link_on_top ul li::after {
+        content: '';
+        width: 0%;
+        height: 2px;
+        background: none;
+        display: block;
+        margin: auto;
+      
+    }
+    .link_on_top{
+        position: absolute;
+        background: rgb(244,54,54);
+        background: linear-gradient(13deg, rgba(244,54,54,1) 0%, rgba(117,169,177,1) 98%, rgba(131,132,158,1) 100%);
+        height:100vh;
+        width:200px;
+        top:0;
+        right: -200px;
+        z-index: 2;
+        transition: 1s;
+    }
+
+    nav .bi{
+        display: block;
+        color:black;
+        margin: 10px;
+        cursor: pointer;
+        font-size: 20px;
+
+    }
+
+    .row-2{
+        flex-direction: column;
+    }
+
+    .campus{
+        flex-direction: column;
+    }
+
+    .campus h1{
+        font-size: 35px;
+    }
+    
+    .about-txt{
+        text-align: left;
+        padding-left: 10px;
+    }
+    
+    
+   }

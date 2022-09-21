@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="main.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,500;1,700&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" integrity="sha384-xeJqLiuOvjUBq3iGOjvSQSIlwrpqjSHXpduPd6rQpuiM3f5/ijby8pCsnbu5S81n" crossorigin="anonymous">        <title>Portfolio</title>
+    </head>
+
+    <body>
+        <section class="TOP">
+        <nav>
+            
+            <div class="avatar"></div>
+            <div class="link_on_top" id="nav-links">
+                <i class="bi bi-x-circle" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#about">ABOUT ME</a></li>
+                    <li><a href="#majorcourses">MAJOR COURSES</a></li>
+                    <li><a href="#campus">ACADEMIC BACKGROUND</a></li>
+                    <li><a href="project.html">PROJECTS</a></li>
+                    <li><a href="table.html">TIME TABLE</a></li>
+                </ul>
+                
+            </div>
+            <i class="bi bi-menu-button-wide-fill" onclick="showmenu()"></i>
+        </nav>
+
+        <div class="Main">
+            <h1>Port<span>  folio</span></h1>
+        </div>
+        <br><br><br>      
+            
+            <div class="row">
+                    <p class="upper_para">Hi, my name is</p>
+                    <br>
+                    <h2>Huzaifa<span>  Bilal</span></h2>
+                    <br>
+                    <p class="para">I am doing BSCS from Fast National University</p>  
+            </div>
+    </section>
+       
+
+<section class="back">
+    <section class="course" id="majorcourses">
+        <h1>Major<span>  Courses</span></h1>
+
+                <div class="row-2">
+                    <div class="box">
+                        <h5>PF</h5>
+                        <p>Programming Fundamental</p>
+                    </div>
+                    <div class="box">
+                        <h5>OOP</h5>
+                        <p>Object Oriented Programming</p>
+                    </div>
+                    <div class="box">
+                        <h5>DS</h5>
+                        <p>Data Structure</p>
+                    </div>
+                    
+                    <div class="box">
+                        <h5>DB</h5>
+                        <p>Data Base</p>
+                    </div>
+                
+                </div>
+    </section>
+
+    <section class="campus" id="campus">
+        <h1>ACADEMIC<span>  BACKGROUND</span></h1>
+        <br><br>
+        <div class="campus-col">
+            <div class="boxt boxt1">
+                <h5>FAST NUCES</h5>
+            </div>
+            <div class="boxt boxt2">
+                <h5>APSACS</h5>
+            </div>
+            <div class="boxt boxt3">
+                <h5>FAUJI FOUNDATION</h5>
+            </div>
+        </div>
+    </section>
+</section>
+
+    <section class="Second" id="about">
+        <div class="about-txt">
+            <h3>ABOUT ME</h3>
+            <h5>COMPUTER<span>  SCIENTIST</span></h5>
+            <p>I'm doing Bachelors from FAST NUCES ISB campus and it is my third year<br>About Myself: I'm an optimistic, passionate, hard-working person<br>who is always looking for ways to help others solve their problems.<br> I love getting to know people and their stories,<br>and like to be able to help them solve problems and move forward from a place of strength.</p>
+
+            <div class="icons">
+                <a href="https://www.facebook.com/aifuuuu1">
+                    <i class="fa fa-facebook"></i>
+                </a>
+                
+                <a href="https://twitter.com/Huzaifa_Bilal2" target="_blank">
+                    <i class="fa fa-twitter"></i>
+                </a>
+                
+                <a href="https://www.instagram.com/huzaifaifu">
+                    <i class="fa fa-instagram"></i>
+                </a>
+                
+                <a href="https://www.linkedin.com/in/huzaifa-bilal-0a3481231/">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+                
+                <a href="https://github.com/aifuu">
+                    <i class="fa fa-github"></i>
+                </a>
+                
+            </div>
+    </div>
+    </section>
+
+    <script>
+    
+        var navlinks = document.getElementById("nav-links");
+       // const matchmedia = window.matchMedia("(max-width:1300px)");
+      //  if(matchmedia.matches){
+        
+              function showmenu(){
+               
+                  navlinks.style.right = "0px";
+                  //navlinks.style.display = "block";
+                  
+              }
+          
+  
+          function hidemenu(){
+              
+              navlinks.style.right = "-200px";
+             // navlinks.style.display = "none";
+          }
+      //  }
+     //   else{
+            
+      //  }
+      
+      
+        
+    </script>
+    </body>
+</html>
