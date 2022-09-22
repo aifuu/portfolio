@@ -48,7 +48,7 @@
     </section>
        
 
-<section class="back">
+<section class="back" id="course">
     <section class="course" id="majorcourses">
         <h1>Major<span>  Courses</span></h1>
 
@@ -128,10 +128,15 @@
         var color_circle = document.getElementById("circle");
         var y = document.getElementById("y_axis");
         var opa = document.getElementById("back-main");
+        var course_opa = document.getElementById("course");
+        var campus_opa = document.getElementById("campus");
+        var about_opa = document.getElementById("about");
         color_circle.style.color = "darkgrey";
    
               function showmenu(){
                 opa.style.opacity = "0.5";
+                course_opa.style.opacity = "0.5";
+                about_opa.style.opacity = "0.5";
                 y.style.overflowY = "hidden";
                 navlinks.style.right = "0px";
               }
@@ -139,6 +144,8 @@
   
           function hidemenu(){
             opa.style.opacity = "1";
+            course_opa.style.opacity = "1";
+            about_opa.style.opacity = "1";
             y.style.overflowY = "scroll";
             navlinks.style.right = "-280px";
           }
