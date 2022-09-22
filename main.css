@@ -66,22 +66,6 @@ nav .avatar {
         transition: 0.5s;
     }
 
-        /*
-    .link_on_top ul li::after {
-        content: '';
-        width: 0%;
-        height: 2px;
-        background: #f44336;
-        display: block;
-        margin-top: auto;
-        transition: 0.5s;
-    }
-
-    .link_on_top ul li:hover::after{
-        width:100%;
-        
-    }
-*/
     .Main h1{
         padding-top: 8%;
         text-align: center;
@@ -95,10 +79,6 @@ nav .avatar {
         color:#f44336
     }
 
-
-   
-
-    
     
     .row{
         width:90%;
@@ -295,6 +275,7 @@ nav .avatar {
     nav .bi{
         display: none;
     }
+    
 
    @media(max-width:767px) {
     
@@ -338,7 +319,11 @@ nav .avatar {
         margin: 10px;
         cursor: pointer;
         font-size: 25px;
+        transition: 0.5s;
+    }
 
+    nav .bi:hover{
+        color: #f44336;
     }
 
     nav {

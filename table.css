@@ -15,16 +15,23 @@ body{
     position:relative;
 }
 nav {
+    width: 100%;
+    background:black;
     display: flex;
-    padding: 1%;
+    padding: 8px;
     justify-content: space-between;
     align-items: center;
-    position:static;
-    top: 0px;
+    position: fixed;
     z-index: 10;
+    box-shadow: -1px 6px 7px -2px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -1px 6px 7px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 6px 7px -2px rgba(0,0,0,0.75);
     
 }
 
+nav .avatar {
+    padding-left: 10px;
+}
 
 .logo{
     color:black;
@@ -33,43 +40,36 @@ nav {
     cursor: pointer;
 }
 .link_on_top{
+    
     flex:1;
     text-align:right;
 }
 .link_on_top ul li{
+   
     list-style:none;
-    display:inline-block;
+    display:inline-flex;
     padding:15px 20px;
     position:relative;
 }
 
     .link_on_top ul li a {
-        color: rgb(255, 255, 255);
+        color: white;
         font-size: 16px;
         text-decoration: none;
-    }
-
-    .link_on_top ul li::after {
-        content: '';
-        width: 0%;
-        height: 2px;
-        background: #f44336;
-        display: block;
-        margin: auto;
+        justify-content: center;
+        }
+    .link_on_top ul li a:hover{
+        color: #f44336;
         transition: 0.5s;
-    }
-
-    .link_on_top ul li:hover::after{
-        width:100%;
-        
     }
 
     .table-container{
         padding:0 10%;
-        margin: 40px auto 0;
+        margin: 0;
     }
 
     .header{
+        padding-top: 14%;
         font-size: 45px;
         text-align: center;
         color: white;
@@ -136,6 +136,14 @@ nav {
         font-weight: 600;
         font-size: 14px;
         text-align: left;
+    }
+
+    .header{
+        padding-top: 23%;
+        font-size: 45px;
+        text-align: center;
+        color: white;
+        margin-bottom: 40px;
     }
 
 
