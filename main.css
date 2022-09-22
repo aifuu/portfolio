@@ -2,8 +2,10 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    overflow-x: hidden;
+   
+    
 }
+
 a{
     text-decoration:none;
 }
@@ -16,26 +18,22 @@ a{
     position:relative;
 }
 nav {
+    width: 100%;
+    background:black;
     display: flex;
-    padding: 1%;
+    padding: 8px;
     justify-content: space-between;
     align-items: center;
-    position:static;
-    top: 0px;
+    position: fixed;
     z-index: 10;
+    box-shadow: -1px 6px 7px -2px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -1px 6px 7px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 6px 7px -2px rgba(0,0,0,0.75);
     
 }
 
-
-
-nav .avatar{
-    width: 80px;
-    border-radius: 50%;
-    height: 80px;
-    background-image: url("2.jpg");
-    background-size:cover;
-    border:2px solid #38f512;
-    
+nav .avatar {
+    padding-left: 10px;
 }
 
 .logo{
@@ -45,29 +43,37 @@ nav .avatar{
     cursor: pointer;
 }
 .link_on_top{
+    
     flex:1;
     text-align:right;
 }
 .link_on_top ul li{
+   
     list-style:none;
-    display:inline-block;
+    display:inline-flex;
     padding:15px 20px;
     position:relative;
 }
 
     .link_on_top ul li a {
-        color: black;
+        color: white;
         font-size: 16px;
         text-decoration: none;
+        justify-content: center;
+        }
+    .link_on_top ul li a:hover{
+        color: #f44336;
+        transition: 0.5s;
     }
 
+        /*
     .link_on_top ul li::after {
         content: '';
         width: 0%;
         height: 2px;
         background: #f44336;
         display: block;
-        margin: auto;
+        margin-top: auto;
         transition: 0.5s;
     }
 
@@ -75,8 +81,9 @@ nav .avatar{
         width:100%;
         
     }
-
+*/
     .Main h1{
+        padding-top: 8%;
         text-align: center;
         font-size: 40px;
         color: black;
@@ -176,13 +183,7 @@ nav .avatar{
 
 
     /*Campus*/
-/*
-    .back{
-        background-image: url("pat.jpg");
-        background-position: center;
-        background-size: cover;
-    }
-*/
+
     .campus{
         width: 80%;
         margin:auto;
@@ -297,10 +298,20 @@ nav .avatar{
 
    @media(max-width:767px) {
     
+
     .link_on_top ul li{
         text-align: left;
-        display: block;
+        display: flex;
+
     }
+
+    .link_on_top ul li a {
+        color: darkgray;
+        font-size: 16px;
+        font: weight 400px ;
+        text-decoration: none;
+    }
+
     .link_on_top ul li::after {
         content: '';
         width: 0%;
@@ -312,23 +323,37 @@ nav .avatar{
     }
     .link_on_top{
         position: absolute;
-        background: rgb(244,54,54);
-        background: linear-gradient(13deg, rgba(244,54,54,1) 0%, rgba(117,169,177,1) 98%, rgba(131,132,158,1) 100%);
+        background-color: #191919;
         height:100vh;
-        width:200px;
+        width: 280px;
         top:0;
-        right: -200px;
+        right: -280px;
         z-index: 2;
         transition: 1s;
     }
 
     nav .bi{
         display: block;
-        color:black;
+        color:white;
         margin: 10px;
         cursor: pointer;
-        font-size: 20px;
+        font-size: 25px;
 
+    }
+
+    nav {
+        width: 100%;
+        background:black;
+        display: flex;
+        padding: 2px;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        z-index: 10;
+        box-shadow: -1px 6px 7px -2px rgba(0,0,0,0.75);
+        -webkit-box-shadow: -1px 6px 7px -2px rgba(0,0,0,0.75);
+        -moz-box-shadow: -1px 6px 7px -2px rgba(0,0,0,0.75);
+        
     }
 
     .row-2{
@@ -348,5 +373,13 @@ nav .avatar{
         padding-left: 10px;
     }
     
+    .Main h1{
+        padding-top: 18%;
+        text-align: center;
+        font-size: 40px;
+        color: black;
+        font-weight: bolder;
+        letter-spacing: 5px;
+    }
     
-   }
+    }

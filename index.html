@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html id="y_axis">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="main.css">
@@ -9,12 +9,14 @@
     </head>
 
     <body>
-        <section class="TOP">
+
         <nav>
             
-            <div class="avatar"></div>
+            <div class="avatar">
+                <img src="logo.png" alt="avatar">
+            </div>
             <div class="link_on_top" id="nav-links">
-                <i class="bi bi-x-circle" onclick="hidemenu()"></i>
+                <i class="bi bi-x-circle" id="circle" onclick="hidemenu()"></i>
                 <ul>
                     <li><a href="#home">HOME</a></li>
                     <li><a href="#about">ABOUT ME</a></li>
@@ -25,10 +27,13 @@
                 </ul>
                 
             </div>
-            <i class="bi bi-menu-button-wide-fill" onclick="showmenu()"></i>
+            <i class="bi bi-chevron-double-left" onclick="showmenu()"></i>
         </nav>
 
-        <div class="Main">
+        <section class="TOP" id="back-main">
+       
+
+        <div class="Main" id="home">
             <h1>Port<span>  folio</span></h1>
         </div>
         <br><br><br>      
@@ -120,16 +125,22 @@
     <script>
     
         var navlinks = document.getElementById("nav-links");
-        
+        var color_circle = document.getElementById("circle");
+        var y = document.getElementById("y_axis");
+        var opa = document.getElementById("back-main");
+        color_circle.style.color = "darkgrey";
+   
               function showmenu(){
-               
-                  navlinks.style.right = "0px";
+                opa.style.opacity = "0.5";
+                y.style.overflowY = "hidden";
+                navlinks.style.right = "0px";
               }
           
   
           function hidemenu(){
-              
-              navlinks.style.right = "-200px";
+            opa.style.opacity = "1";
+            y.style.overflowY = "scroll";
+            navlinks.style.right = "-280px";
           }
       
       //
