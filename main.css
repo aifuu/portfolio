@@ -12,9 +12,7 @@ a{
 .TOP{
     width:100%;
     min-height:100vh;
-    background-image:url("Final.jpg");
-    background-size:cover;
-    background-position:center;
+    background-color:rgba(36, 37, 42, 1);
     position:relative;
 }
 nav {
@@ -26,10 +24,7 @@ nav {
     align-items: center;
     position: fixed;
     z-index: 10;
-    box-shadow: -1px 6px 7px -2px rgba(0,0,0,0.75);
-    -webkit-box-shadow: -1px 6px 7px -2px rgba(0,0,0,0.75);
-    -moz-box-shadow: -1px 6px 7px -2px rgba(0,0,0,0.75);
-    
+    box-shadow: -1px 6px 1px -2px rgb(0, 0, 0, 0.2);
 }
 
 nav .avatar {
@@ -79,7 +74,7 @@ nav .avatar {
         color:#f44336
     }
 
-    
+
     .row{
         width:90%;
         position: absolute;
@@ -87,6 +82,12 @@ nav .avatar {
         left:50%;
         transform: translate(-50%,-50%);
         text-align: center;
+    }
+    
+    .avatar1 img{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
     }
     .row .upper_para{
         opacity: 0.7;
@@ -101,6 +102,7 @@ nav .avatar {
         font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
     .row h2{
+        color: #ffffff;
         font-size: 40px;
         font-weight: bolder;
     }
@@ -181,7 +183,7 @@ nav .avatar {
   min-height: 40px;
   min-width: 0px;
   overflow: hidden;
-  padding: 0px;
+  padding: 10px;
   padding-left: 20px;
   padding-right: 20px;
   margin-top: 60px;
@@ -265,7 +267,7 @@ nav .avatar {
     /*ABOUT ME*/
 
     .Second{
-        background-color: #191919;
+        background-color:rgba(36, 37, 42, 1);
         padding: 100px 0;
         align-items: center;
         justify-content: center;
@@ -384,9 +386,7 @@ nav .avatar {
         align-items: center;
         position: fixed;
         z-index: 10;
-        box-shadow: -1px 6px 7px -2px rgba(0,0,0,0.75);
-        -webkit-box-shadow: -1px 6px 7px -2px rgba(0,0,0,0.75);
-        -moz-box-shadow: -1px 6px 7px -2px rgba(0,0,0,0.75);
+        box-shadow: -1px 6px 1px -2px rgb(0, 0, 0, 0.2);
         
     }
 
@@ -403,8 +403,10 @@ nav .avatar {
     }
     
     .about-txt{
-        text-align: left;
-        padding-left: 10px;
+        justify-content: center;
+        text-align: center;
+        padding-left: 15px;
+        padding-right: 15px;
     }
     
     .Main h1{
