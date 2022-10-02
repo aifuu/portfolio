@@ -2,18 +2,23 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-   
     
 }
 
 a{
     text-decoration:none;
 }
+body{
+    background-color:rgba(36, 37, 42, 1);
+}
 .TOP{
     width:100%;
     min-height:100vh;
     background-color:rgba(36, 37, 42, 1);
     position:relative;
+}
+.back{
+    background-color:rgba(36, 37, 42, 1);
 }
 nav {
     width: 100%;
@@ -122,13 +127,14 @@ nav .avatar {
         width: 80%;
         margin:auto;
         text-align: center;
-        padding-top: 100px; 
-        background-color:white;
+        padding-top: 60px; 
+        background-color:rgba(36, 37, 42, 1);
     }
 
     .course h1{
         font-size: 40px;
         font-weight: bold;
+        color: #ffffff;
     }
 
     .row-2{
@@ -163,6 +169,65 @@ nav .avatar {
         padding-left: 18px;
 
     }
+
+    /*project*/
+    
+    .project .row1{
+        display: flex;
+        align-items:center;
+    }
+    .project .col1{
+        flex-basis: 100%;
+        padding-top: 30px;
+        text-align: center;
+    }
+    .project .col1 h1{
+        color: white;
+        font-size:45px;
+        padding-top: 8%;
+    }
+    .project p{
+        color:black;
+        font-size: 12px;
+    }
+
+    .project .boxa{
+        width:200px;
+        height:230px;
+        display:inline-block;
+        border-radius: 10px;
+        padding: 15px 25px;
+        box-sizing: border-box;
+        cursor: pointer;
+        margin: 10px 15px;
+        background-position: center;
+        background-size: cover;
+        transition: transform 0.5s;
+    }
+    .project .boxa:hover{
+        transform: translateY(-10px);
+    }
+    .project .boxa h5{
+        color: white;
+    }
+
+    .project .boxa p{
+        color:white;
+    }
+    .project .box1{
+        background-image: url("ludo.jpg");
+    }
+    .project .box2{
+        background-image: url("flight.jpg");
+    }
+    .project .box3{
+        background-image: url("network.jpg");
+    }
+    .project .box4{
+        background-image: url("web.jpg");
+    }
+
+
 
 /* CSS */
 .button-18 {
@@ -219,13 +284,14 @@ nav .avatar {
         width: 80%;
         margin:auto;
         text-align: center;
-        padding-top: 100px; 
-        background-color:white;
+        padding-top: 60px; 
+        background-color:rgba(36, 37, 42, 1);
         margin-bottom: 5%;
 
     }
 
     .campus h1{
+        color:#ffffff;
         font-size: 40px;
         font-weight: bold;
     }
@@ -268,7 +334,7 @@ nav .avatar {
 
     .Second{
         background-color:rgba(36, 37, 42, 1);
-        padding: 100px 0;
+        padding: 60px;
         align-items: center;
         justify-content: center;
     }
